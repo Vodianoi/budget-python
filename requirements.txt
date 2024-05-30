@@ -1,0 +1,2 @@
+requests
+bottle~=0.12.25
