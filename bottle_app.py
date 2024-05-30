@@ -1,6 +1,6 @@
-
 # A very simple Bottle Hello World app for you to get started with...
 from bottle import default_app, route, template
+
 
 # @route('/')
 # def afficher_budget():
@@ -8,7 +8,8 @@ from bottle import default_app, route, template
 
 
 def get_salaire(budget):
-    return budget/3
+    return budget / 3
+
 
 @route('/budget/<budget:int>')
 def afficher_budget(budget):
@@ -17,4 +18,3 @@ def afficher_budget(budget):
 
 
 application = default_app()
-
